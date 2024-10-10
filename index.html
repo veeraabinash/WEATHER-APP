@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP </title>
+    <link rel="icon" href="logo.avif">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+            <div class="search-box">
+
+                <input type="text" placeholder="Enter your location" class="input-box">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn">search</button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="cloud-1.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <span>°C</span></p>
+                <p class="description">Weather</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK5JREFUSEvt1TEOAUEYBeBvExFnIBIu4R4KoXAIJ1BTOIEelcI5XEHvDgoyspKxYdcWW0hm2jfvvZn3//9MpuGVNawvGVQmHEd0wREbXHNmHwuMccOpJv5Wg3suGoymaOGAQeGYAZ+gXYLPcA68+AajnDD8ItjBrsJwjxf/qV3soi7WmOcmWyyjyHpYleAx/6NBZdHqbkhFDonFXZWKnCaZ/57kuq/AT/vTl1kZ0wPiDFoZO0u5igAAAABJRU5ErkJggg=="/>
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                   
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEu11b9KHFEUx/GPb6CVIqhgk3TaGRtFsFHyBsZOiE+QIDEWKhaKDyBooz5ALLQTJFFSCrGwsvBfoaJgraB74U5Yd5fZmXV2mmHu3Hu+53fOvb/boslPS5Pjqwf4jHl8xCkW8CtPUmmAAfylKolR7GeFpAG2MYHvWMYPLOI3hosAVMZowwMe0Rp/dmAdn+L3EaZwlyyu14NyyM/Yjz8YQgh+HN/l8y5LfeqPybyp70tG2SM4wBa+YAczce0qxrCG6TBWriAN8IQTzGE3BrtGJ9pxG8d6cYYL9FQCMgpIndaN81IfrtBVNKAPSxgvBd+Izc5cojzqQvahyfd5epAFEAIe4ituGtmmWSBVc/Kcg3cDKrdpAk/bvs/4l2aCaecgC6BcVU0TLKJEs1FBYiFvSlkEoJYJ/oc0Atgs2cEkvmEFiYKaNt4IYBDBlivXJiZYSInCVRquzw/xKg1WvldrHzeiINd5aDrgFZIWQRn/ggGmAAAAAElFTkSuQmCC"/>
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
